@@ -1,0 +1,32 @@
+{
+  "id": "example",
+  "name": {
+    "en": "ExampleDriver"
+  },
+  "class": "sensor",
+  "capabilities": [
+    "onoff"
+  ],
+  "capabilitiesOptions": {
+    "onoff": {
+      "getable": true,
+      "setable": false
+    }
+  },
+  "platforms": [
+    "local"
+  ],
+  "pair": [
+    {
+      "id": "list_clients",
+      "template": "list_devices",
+      "navigation": {
+        "next": "add_clients"
+      }
+    },
+    {
+      "id": "add_clients",
+      "template": "add_devices"
+    }
+  ]
+}
